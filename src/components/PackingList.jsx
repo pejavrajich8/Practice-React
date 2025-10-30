@@ -4,8 +4,8 @@ import { useState } from "react";
 
 export default function PackingList() {
        const [items, setItems] = useState([
-        { id: 1, name: "Clothes", isPacked: true },
-        { id: 2, name: "Toiletries", isPacked: true },
+        { id: 1, name: "Clothes", isPacked: false },
+        { id: 2, name: "Toiletries", isPacked: false },
         { id: 3, name: "Snacks", isPacked: false },
         { id: 4, name: "Books", isPacked: false },
        ])
