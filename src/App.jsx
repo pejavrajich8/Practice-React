@@ -3,6 +3,7 @@ import ProductTable from "./components/ProductTable.jsx";
 import { useState } from 'react';
 import { PRODUCTS } from "./consts/products.js";
 import PackingList from "./components/PackingList.jsx";
+import Counter from "./components/Counter.jsx";
 
 function FilterableProductTable() {
   const [filteredProducts, setFilteredProducts] = useState(PRODUCTS);
@@ -27,6 +28,8 @@ function FilterableProductTable() {
         Switch
       </button>
       {showPackingList ? <PackingList /> : <ProductTable products={filteredProducts} />}
+      <Counter />
+  
     </div>
   );
 }

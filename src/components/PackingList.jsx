@@ -1,5 +1,4 @@
 import PackingListItem from "./PackingListItem";
-import React from "react";
 import { useState } from "react";
 
 export default function PackingList() {
@@ -33,6 +32,8 @@ export default function PackingList() {
         </ul>
        </section>
 
+    );
+};
+
+
        
-    )
-}
